@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, input, button {
+  font-family: Arial, sans-serif;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__section {
+  display: flex;
+  align-items: center;
+}
+
+.menu__section.left .menu__icon {
+  padding: 12px 16px;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #757575;
+  padding: 12px 8px;
+}
+
+.menu__link.active {
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+.menu__link:not(.active) {
+  margin-bottom: 2px;
+}
+
+.menu__section.right {
+  margin-right: 5px;
+}
+
+.menu__section.right .menu__more {
+  padding: 12px;  
+}
+
+.menu__avatar {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.circle__avatar {
+  position: absolute;
+}
+
+.menu__profile {
+  display: flex;
+  padding: 4px;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 8px 0px;
+}
+
+.content__logo {
+  max-width: 45%;
+}
+
+.content__search {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 736px;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 7px 10px 6px 20px;
+  background: transparent;
+  outline: none;
+  border: 1px solid #dadce0;
+  color: rgba(0, 0, 0, 0.87)
+}
+
+.content_offer {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.content_offer a {
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 24px;
+  display: flex;
+  background: #f2f2f2;
+  flex-direction: column;
+}
+.footer__section {
+  padding: 10px 12px;
+}
+
+.footer__section:not(:first-child){
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer__location span {
+  padding-top: 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__links a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #5f6368;
+  padding: 10px;
+  margin-left: 10px;
+}
